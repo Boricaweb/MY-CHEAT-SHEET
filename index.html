@@ -12,9 +12,11 @@
         <main>
             <table>
                 <thead>
+                    <!--Table topic at the first row-->
                     <tr class="table-header">
                         <th>HTML FORM TAG</th>
                     </tr>
+                    <!--Table subheader at the second row-->
                     <tr class="table-subheader">
                         <th scope="col">TAG</th>
                         <th scope="col">DESCRIPTION</th>
@@ -23,17 +25,22 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--First rows content-->
                     <tr>
-                        <td scope="row" rowspan="2"><code>&lt;form&gt;&lt;/form&gt;</code></td>
-                        <td rowspan="2">Defines an HTML form for user input</td>
+                        <td scope="rowgroup" rowspan="2"><code>&lt;form&gt;&lt;/form&gt;</code></td>
+                        <td scope="rowgroup" rowspan="2">Defines an HTML form for user input</td>
                         <td><code>action</code></td>
                         <td>Specifies where to send the form-data when the form is submitted</td>
                     </tr>
                     <tr>
-                        <td scope="row" rowspan="7"><code>&lt;input&gt;</code></td>
-                        <td rowspan="7">Defines an input control</td>
                         <td><code>method</code></td>
                         <td>Defines the HTTP method to use when sending form-data</td>
+                    </tr>
+                    <tr>
+                        <td scope="rowgroup" rowspan="7"><code>&lt;input&gt;</code></td>
+                        <td scope="rowgroup" rowspan="7">Defines an input control</td>
+                        <td><code>type</code></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
@@ -41,3 +48,4 @@
 
     </body>
 </html>
+                        
