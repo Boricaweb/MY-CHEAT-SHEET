@@ -1,18 +1,22 @@
+/* It does not work with the party font, so I commented it out
 @font-face {
-    font-family: 'Narnia';
-    src: url("/font/narnialone-cdnfonts/Narnialone-demo.otf") format('otf'),
-         url("/font/narnialone-cdnfonts/Narnialone-demo.woff") format('woff'),
-         url("/font/narnialone-cdnfonts/Narnialone-demo.ttf") format('truetype'),
-         url("/font/narnialone-cdnfonts/Narnialone-demo.woff2") format('woff2');
+    font-family: 'party';
+    src: url("/font/party-bright-cdnfonts/Merry-Party-BF6540809f6d219.otf") format('otf'),
+         url("/font/party-bright-cdnfonts/Merry-Party-BF6540809f6d219.woff") format('woff'),
+         url("/font/party-bright-cdnfonts/Merry-Party-BF6540809f6d219.ttf") format('truetype'),
+         url("/font/party-bright-cdnfonts/Merry-Party-BF6540809f6d219.woff2") format('woff2');
 }
 
+ It does not work with the ignite font, so I commented it out
 @font-face {
-    font-family: 'Death';
-    src: url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.otf"),
-         url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.woff") format('woff'),
-         url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.ttf") format('truetype'),
-         url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.woff2") format('woff2');
+    font-family: 'ignite';
+    src: url("/font/i-ignite-remove-cdnfonts/IgniteRemove-p7GoO.otf") format('otf'),
+         url("/font/i-ignite-remove-cdnfonts/IgniteRemove-p7GoO.woff") format('woff'),
+         url("/font/i-ignite-remove-cdnfonts/IgniteRemove-p7GoO.ttf") format('truetype'),
+         url("/font/i-ignite-remove-cdnfonts/IgniteRemove-p7GoO.woff2") format('woff2');
 }
+*/
+
 
 * {
     box-sizing: border-box;
@@ -21,7 +25,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-image: url("/picture/sky02.jpg");
     background-size: cover;
     background-repeat: no-repeat; /* Prevent tiling */
@@ -30,8 +33,8 @@ body {
     color: whitesmoke;
 }
 
-body h1 {
-    font-family: 'Narnia', sans-serif;
+h1 {
+    font-family: 'Party Bright', sans-serif;
     text-align: center;
     font-size: 3.5vmax;
     font-weight: 800;
@@ -41,10 +44,10 @@ body h1 {
 }
 
 main {
-    font-family: 'Death', sans-serif;
+    font-family: 'i Ignite Remove', sans-serif;
     font-size: 1.2vmax;
     max-width: 80%;
     line-height: 1.6;
-    color: azure
-    background-color: hsla(0, 0%, 100%, 1);
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.5);
 }
