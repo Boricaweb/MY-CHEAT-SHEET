@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Narnia';
+    src: url("/font/narnialone-cdnfonts/Narnialone-demo.otf") format('otf'),
+         url("/font/narnialone-cdnfonts/Narnialone-demo.woff") format('woff'),
+         url("/font/narnialone-cdnfonts/Narnialone-demo.ttf") format('truetype'),
+         url("/font/narnialone-cdnfonts/Narnialone-demo.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'Death';
+    src: url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.otf"),
+         url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.woff") format('woff'),
+         url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.ttf") format('truetype'),
+         url("/font/death-fire-cdnfonts/Death-Fire-BF654506b943c6c.woff2") format('woff2');
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,15 +30,20 @@ body {
     color: whitesmoke;
 }
 
-h1 {
-    font-family: Arial, sans-serif;
+body h1 {
+    font-family: 'Narnia', sans-serif;
     text-align: center;
+    font-size: 3.5vmax;
+    font-weight: 800;
+    letter-spacing: 0.5vmax;
     margin: 20px 0;
     color:aliceblue;
 }
 
-table {
-    font-family: Arial, sans-serif;
+main {
+    font-family: 'Death', sans-serif;
+    font-size: 1.2vmax;
+    max-width: 80%;
     line-height: 1.6;
     color: azure
     background-color: hsla(0, 0%, 100%, 1);
