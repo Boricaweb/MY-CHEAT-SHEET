@@ -18,10 +18,10 @@
                     </tr>
                     <!--Table subheader at the second row-->
                     <tr class="table-subheader">
-                        <th scope="col">TAG</th>
-                        <th scope="col">DESCRIPTION</th>
-                        <th scope="col">ATTRIBUTED</th>
-                        <th scope="col">DESCRIPTION</th>
+                        <th scope="col" class="tag-group">TAG</th>
+                        <th scope="col" class="tag-group">DESCRIPTION</th>
+                        <th scope="col" class="attribute-group">ATTRIBUTED</th>
+                        <th scope="col" class="attribute-group">DESCRIPTION</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -135,7 +135,7 @@
                     <!--First rows content for datalist tag with the first attribute-->
                     <tr>
                         <td scope="rowgroup" rowspan="2"><code>&lt;datalist&gt;&lt;/datalist&gt;</code></td>
-                        <td scope="rowgroup" rowspan="2">Specifies a list of pre-defined options for an input element.</td>
+                        <td scope="rowgroup" rowspan="2">Specifies a list of pre-defined options for an input element and use with option tag similar to select tag.</td>
                         <td><code>id</code></td>
                         <td>Connect the datalist with the input tag by using the list attribute.</td>
                     </tr>
@@ -144,6 +144,24 @@
                         <td><code>class</code></td>
                         <td>Specifies the class of the datalist element which can be used for styling.</td>
                     </tr>
+                    <!--First rows content for textarea tag with the first attribute-->
+                    <tr>
+                        <td scope="rowgroup" rowspan="3"><code>&lt;textarea&gt;&lt;/textarea&gt;</code></td>
+                        <td scope="rowgroup" rowspan="3">Defines a multi-line text input control.</td>
+                        <td><code>name</code></td>
+                        <td>Defines the name of the textarea control which will display while the input space is empty.</td>
+                    </tr>
+                    <!--Second rows content for textarea tag with the second attribute-->
+                    <tr>
+                        <td><code>rows</code></td>
+                        <td>Specifies the number of visible text lines in the textarea.</td>
+                    </tr>
+                    <!--Third rows content for textarea tag with the third attribute-->
+                    <tr>
+                        <td><code>cols</code></td>
+                        <td>Specifies the visible width of the textarea in characters.</td>
+                    </tr>
+                    
                 </tbody>
             </table>
         </main>
