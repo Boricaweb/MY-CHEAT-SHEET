@@ -1,4 +1,4 @@
-/* It does not work with the party font, so I commented it out
+/* I dont know why it does not work with the party font, so I use link instead.
 @font-face {
     font-family: 'party';
     src: url("/font/party-bright-cdnfonts/Merry-Party-BF6540809f6d219.otf") format('otf'),
@@ -7,7 +7,7 @@
          url("/font/party-bright-cdnfonts/Merry-Party-BF6540809f6d219.woff2") format('woff2');
 }
 
- It does not work with the ignite font, so I commented it out
+ I dont know why it does not work with the ignite font, so I use link instead.
 @font-face {
     font-family: 'ignite';
     src: url("/font/i-ignite-remove-cdnfonts/IgniteRemove-p7GoO.otf") format('otf'),
@@ -16,7 +16,6 @@
          url("/font/i-ignite-remove-cdnfonts/IgniteRemove-p7GoO.woff2") format('woff2');
 }
 */
-
 
 * {
     box-sizing: border-box;
@@ -28,9 +27,11 @@ body {
     background-image: url("/picture/sky02.jpg");
     background-size: cover;
     background-repeat: no-repeat; /* Prevent tiling */
-    background-attachment: fixed; /* Keep the background fixed */
+    background-attachment: fixed;  /*Keep the background fixed */
     background-position: center;
     color: whitesmoke;
+    width: 100vw; /* Full viewport width */
+    height: 100vh;
 }
 
 h1 {
@@ -39,15 +40,33 @@ h1 {
     font-size: 3.5vmax;
     font-weight: 800;
     letter-spacing: 0.5vmax;
-    margin: 20px 0;
+    margin: 5vh 0;
     color:aliceblue;
+    -webkit-text-stroke: 2px black; /* width and color */
 }
 
 main {
     font-family: 'i Ignite Remove', sans-serif;
     font-size: 1.2vmax;
-    max-width: 80%;
+    text-align: center;
+    max-width: 100%;
     line-height: 1.6;
     color: azure;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    width: 100%;
+    margin-top: 10vh;
+    font-family: 'i Ignite Remove', sans-serif;
+    font-size: 1.2vmax;
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: azure;
+}
+
+footer a {
+    color:aqua;
+    text-decoration: none;
 }
