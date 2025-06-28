@@ -32,7 +32,7 @@ body {
     color: whitesmoke;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
 }
 
 h1 {
@@ -59,16 +59,18 @@ body main {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-table tr {
-    border: 1px solid rgb(240, 4, 253);
-    border-radius: 10px;
-    margin: 5px;
+.table-header th {
+    font-size: 2vmax;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(240, 4, 253);
 }
 
-table thead tr .table-header {
+th .tag-group {
     font-size: 1.5vmax;
     text-align: center;
-    border-style: solid dashed solid;
+    border-style: solid;
     border-width: 2px;
     border-color: rgb(240, 4, 253);
 }
