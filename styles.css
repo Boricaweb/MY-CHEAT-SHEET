@@ -32,7 +32,7 @@ body {
     color: whitesmoke;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+    overflow-x: hidden; /* Allow horizontal scrolling if content overflows */
 }
 
 h1 {
